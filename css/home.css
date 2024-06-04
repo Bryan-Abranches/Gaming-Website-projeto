@@ -1,0 +1,94 @@
+/* Home Principal */
+
+.home {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.home-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 70%;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.home-principal h2 {
+  font-size: 3rem;
+}
+
+.home-principal strong {
+  color: #8921a6;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.home-img {
+  max-width: 100%;
+}
+
+.home-img img {
+  width: 100%;
+}
+
+/* Section See all */
+
+.see-all {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.see-all div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.box-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-game {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-game img {
+  max-width: 100%;
+  width: 250px;
+  height: 277px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card-game span p {
+  display: flex;
+  gap: 10px;
+}
+
+.card-game span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.msg-01 {
+  font-size: 3em;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+/*  */
