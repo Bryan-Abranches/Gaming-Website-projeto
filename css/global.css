@@ -2,31 +2,91 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: whitesmoke;
 }
 
 body {
   background: rgb(18, 49, 89);
-  background: linear-gradient(
+  /* background: linear-gradient(
     25deg,
     rgba(18, 49, 89, 1) 0%,
     rgba(68, 148, 219, 1) 45%,
-    rgba(133, 255, 220, 1) 100%
-  );
+    rgba(100, 180, 195, 1) 100%
+  ); */
   background-repeat: no-repeat;
   width: 100%;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .header {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px 0;
+  padding: 1.2rem;
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.logo a i {
+  color: #b86ad9;
+  font-size: 5rem;
+}
+
+.logo:hover {
+  animation: translateY 0.8s infinite alternate;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.social-midia {
+  display: flex;
+  gap: 2rem;
+  transition: 2s;
+}
+
+.social-midia a i {
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: 600ms;
+  color: #b86ad9;
+}
+.social-midia a:hover {
+  transition: 600ms;
+  transform: scale(1.1);
+  animation: translateY 0.8s infinite alternate;
 }
 
 .header ul {
@@ -36,13 +96,44 @@ body {
 .header a {
   text-decoration: none;
 }
+
 .menu-nav {
   display: flex;
-  justify-content: space-evenly;
-  background-color: yellow;
+  align-items: center;
+  width: 100%;
   gap: 100px;
+  font-size: 12px;
 }
 .menu-nav ul {
   display: flex;
-  gap: 30px;
+  gap: 4rem;
+}
+
+.menu-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: 4s transform;
+}
+
+.menu-nav ul li a:hover {
+  transition: 4s transform;
+  border-bottom: 3px solid #b86ad9;
+}
+
+.box-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.box-nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s;
+}
+
+.box-nav a:hover {
+  transition: 4s transform;
+  border-bottom: 3px solid #b86ad9;
 }

@@ -44,3 +44,27 @@
   transform: scale(0.98);
   transition: 500ms;
 }
+
+.btn-03 {
+  width: 130px;
+  height: 40px;
+  border-style: none;
+  transition: 400ms;
+  background-color: #8921a6;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-03:hover {
+  transform: scale(1.01);
+  transition: 500ms;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.btn-03:active {
+  transform: scale(0.98);
+  transition: 500ms;
+}
