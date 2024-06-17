@@ -27,10 +27,10 @@ app.use(express.json()); //Configurar o servidor para que todas as reqisições 
 
 // ROTAS ---->
 
-app.use("/", indexRouter);
+app.use(indexRouter);
 
 /* Servidor*/
 
 app.listen(port, () => {
-  console.log(`https//locahost:${port}`);
+  console.log(`http//localhost:${port}`);
 });
